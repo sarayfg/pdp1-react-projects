@@ -34,6 +34,7 @@ class App extends Component {
         .then(res => {
             const result = res.data.artists.items;
             if(result.length > 0) {
+                console.log(test);
                 this.setState({
                     data: result,
                     response: true
